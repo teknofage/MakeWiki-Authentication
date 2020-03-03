@@ -26,7 +26,7 @@ SECRET_KEY = '1yct-t!2bnkgc7j59z+9cdd2k)@y+ftqor$!aya()3if^cnlo-'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-      ALLOWED_HOSTS = ['localhost', 'makewiki2.herokuapp.com'],
+      ALLOWED_HOSTS = ['localhost', 'makewiki2-whmc.herokuapp.com'],
 
     
 ]
