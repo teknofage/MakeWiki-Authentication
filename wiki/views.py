@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic import CreateView
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
 
 from wiki.models import Page
 from wiki.forms import PageCreateForm
@@ -30,9 +32,6 @@ class PageDetailView(DetailView):
         
 class CreatePageView(CreateView):
      
-    class Meta:
-        model = Page
-        
     def get(self, request, *args, **kwargs):
         context = {'form': PageCreateForm()}
         return render(request, 'partials/new_page.html', context)

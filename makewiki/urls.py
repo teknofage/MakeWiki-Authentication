@@ -23,6 +23,9 @@ CHALLENGES:
     2. Make sure Django doesn't give you any warnings or errors when you execute `python manage.py runserver`.
 """
 urlpatterns = [
+    #API App
+    path('api/', include('api.urls')),
+    
     # Admin Site
     path('admin/', admin.site.urls),
 
